@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from app.models.naive_bayes import predict as model_predict
+from app.models.svm import predict as model_predict
 from app.schemas.prediction import PredictRequest, PredictResponse
 
 router = APIRouter()
